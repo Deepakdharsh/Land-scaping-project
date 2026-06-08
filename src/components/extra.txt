@@ -1,0 +1,76 @@
+{items.map((item, i) => (
+          <div
+            key={i}
+            className="item absolute inset-0 w-full h-full flex shadow-xl"
+          >
+            {/* LEFT CONTENT */}
+            <div className="w-1/2 bg-white flex flex-col justify-center p-12">
+              <h2 className="text-3xl font-bold mb-4">
+                {item.title}
+              </h2>
+
+              <p>{item.text}</p>
+            </div>
+
+            {/* RIGHT VIDEO */}
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-1/2 h-full object-cover"
+              src={item.video}
+            />
+          </div>
+        ))}
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        {/* CARD 3 */}
+        <div className="item bg-red-300 h-full w-full absolute inset-0 overflow-hidden">
+
+          {/* BOTTOM SHADOW */}
+          <div
+            className="top-shadow absolute bottom-0 left-0 w-full h-full z-10 pointer-events-none"
+            style={{
+              opacity: 0,
+              backdropFilter: "blur(20px)",
+              background:
+      "linear-gradient(to top, rgba(0,53,52,0.9), transparent)",
+            }}
+          />
+
+          <div className="h-full flex items-center justify-center text-6xl font-bold">
+            CARD 3
+          </div>
+        </div>
+
+        {/* CARD 4 */}
+      {  <div className="item bg-blue-200 h-full w-full absolute inset-0 overflow-hidden">
+
+          {/* BOTTOM SHADOW */}
+          <div
+            className="top-shadow absolute bottom-0 left-0 w-full h-full z-10 pointer-events-none"
+            style={{
+              opacity: 0,
+              backdropFilter: "blur(20px)",
+              background:
+      "linear-gradient(to top, rgba(0,53,52,0.9), transparent)",
+            }}
+          />
+
+          <div className="h-full flex items-center justify-center text-6xl font-bold">
+            CARD 4
+          </div>
+        </div>}
